@@ -49,5 +49,19 @@ const testarray1 = ["string1", "string2", 'string3'];
 let tuplearr1;
 // initialize correctly 
 tuplearr1 = ["string", 25, true, "string"];
+// tuplearr1 =[23,"string",true,"string"] Error cause the order is mismatching 
 console.log(tuplearr1);
+// to avoid the mismatching of the assigned values
+// we can use read only tuples 
+let tuplearr2 = ["string", 34567, true];
+// ---------------------------------------
+// Named Tuples 
+// named tuples allowed us to give the content to our values 
+const usersData = ["username", 27];
+console.log(usersData);
+// Destructuring Tuples
+const graph = [55.2, 41.3];
+const [val1, val2] = graph;
+console.log(val1, val2);
+// /---------------------------------
 //# sourceMappingURL=index.js.map

@@ -52,3 +52,17 @@ let tuplearr1 : [string,number,boolean,string];
 tuplearr1 =["string",25,true,"string"];
 // tuplearr1 =[23,"string",true,"string"] Error cause the order is mismatching 
 console.log(tuplearr1);
+
+// to avoid the mismatching of the assigned values
+// we can use read only tuples 
+let tuplearr2 :readonly [string,number,boolean] = ["string",34567,true] 
+// ---------------------------------------
+// Named Tuples 
+// named tuples allowed us to give the content to our values 
+const usersData :[name:string,age:number]=["username",27]
+console.log(usersData);
+// Destructuring Tuples
+const graph: [number, number] = [55.2, 41.3];
+const [val1, val2] = graph;
+console.log(val1,val2);
+// /---------------------------------
