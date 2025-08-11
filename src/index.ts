@@ -87,3 +87,28 @@ const carNames : {[index: string]: string}={};
 carNames.Bmw = "5 star car" 
 const nameAgeMap: { [index: string]: number } = {};
 // nameAgeMap.Jack = "twentyfive"; Error  
+//------------------------------------------------------------------
+// Type Script Enums 
+// An enum is a special "class" that represents a group of constants (unchangeable variables).
+// Enums come in two flavors string and numeric. Lets start with numeric.
+
+enum Directions {
+  North="North",
+  South="South",
+  West="West",
+}
+
+let current_direction = (directions:string)=>{
+  if (Directions.North==directions){
+    console.log( "the direction is ",Directions.North);
+  }
+  else if  (Directions.West==directions){
+    console.log( "the direction is ",Directions.West);
+  }else if (Directions.South==directions){
+    console.log( "the direction is ",Directions.South);
+  }else {
+    console.log("the direction is somthing else")
+  }
+}
+
+current_direction(Directions.North);

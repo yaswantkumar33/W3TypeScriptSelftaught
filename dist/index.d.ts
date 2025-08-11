@@ -22,4 +22,16 @@ declare const car: {
     type: string;
     mileage?: number;
 };
+declare const carNames: {
+    [index: string]: string;
+};
+declare const nameAgeMap: {
+    [index: string]: number;
+};
+declare enum Directions {
+    North = "North",
+    South = "South",
+    West = "West"
+}
+declare let current_direction: (directions: string) => void;
 //# sourceMappingURL=index.d.ts.map

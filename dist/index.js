@@ -80,4 +80,34 @@ const car = {
 };
 car.mileage = 2000;
 console.log(car);
+// Index Signatures
+const carNames = {};
+carNames.Bmw = "5 star car";
+const nameAgeMap = {};
+// nameAgeMap.Jack = "twentyfive"; Error  
+//------------------------------------------------------------------
+// Type Script Enums 
+// An enum is a special "class" that represents a group of constants (unchangeable variables).
+// Enums come in two flavors string and numeric. Lets start with numeric.
+var Directions;
+(function (Directions) {
+    Directions["North"] = "North";
+    Directions["South"] = "South";
+    Directions["West"] = "West";
+})(Directions || (Directions = {}));
+let current_direction = (directions) => {
+    if (Directions.North == directions) {
+        console.log("the direction is ", Directions.North);
+    }
+    else if (Directions.West == directions) {
+        console.log("the direction is ", Directions.West);
+    }
+    else if (Directions.South == directions) {
+        console.log("the direction is ", Directions.South);
+    }
+    else {
+        console.log("the direction is somthing else");
+    }
+};
+current_direction(Directions.North);
 //# sourceMappingURL=index.js.map
