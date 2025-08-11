@@ -13,4 +13,13 @@ declare let tuplearr2: readonly [string, number, boolean];
 declare const usersData: [name: string, age: number];
 declare const graph: [number, number];
 declare const val1: number, val2: number;
+declare const objval1: {
+    name: string;
+    age: number;
+    isactive: boolean;
+};
+declare const car: {
+    type: string;
+    mileage?: number;
+};
 //# sourceMappingURL=index.d.ts.map

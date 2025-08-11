@@ -66,3 +66,24 @@ const graph: [number, number] = [55.2, 41.3];
 const [val1, val2] = graph;
 console.log(val1,val2);
 // /---------------------------------
+// type script object types 
+// Basic Typescript objects 
+const objval1 : {name:string,age:number,isactive:boolean} ={
+  name:"username",
+  age:34,
+  isactive:false,
+}
+console.log("example Basic Object Typing",objval1)
+// same like others you can't assing a different type varibale to the objects like objval1.name =234
+// Optional Properties 
+// Optional properties are properties that don't have to be defined in the object definition.
+const car: { type: string, mileage?: number } = {  //? defines that value is optional
+  type: "Toyota"
+};
+car.mileage = 2000;
+console.log(car);
+// Index Signatures
+const carNames : {[index: string]: string}={};
+carNames.Bmw = "5 star car" 
+const nameAgeMap: { [index: string]: number } = {};
+// nameAgeMap.Jack = "twentyfive"; Error  
