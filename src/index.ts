@@ -1,3 +1,5 @@
+import { Interface } from "readline";
+
 console.log("Welcome to the typescript learning!");
 // Type Script simple type values ley
 let username : string ="UserName"
@@ -112,3 +114,45 @@ let current_direction = (directions:string)=>{
 }
 
 current_direction(Directions.North);
+
+// type script alisas and interfaces 
+// IN type script it allows the type of the varibale defined seperately , these aliases and interfaces help us to easily share the types to different variables 
+
+// type aliases 
+// tupe aliases allow to define the type of the variable seperately for example like below 
+type carName = string
+type carYear = number
+type carModel = string
+
+type car ={
+  carName:carName,
+  carYear:carYear,
+  carModel:carModel,
+}
+const Car :car = {
+  carName:"I20 Nline ",
+  carYear:2026,
+  carModel:"N6"
+}
+console.log("the Car object value is" + Car.carName + Car.carModel, Car.carYear);
+// these above "type" aliases are used in places where thery needed as singluar value 
+
+// Interfaces are similar to type but they are only applied to objects 
+// Example
+
+interface Car{
+  name : string,
+  year:number,
+  username:string,
+  insurance:boolean,
+  number:number,
+}
+
+const carDetails: Car={
+  name:"Nline N6",
+  year:2026,
+  username:"AshaYAsh",
+  insurance:true,
+  number:1234567
+}
+console.log(carDetails);

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Welcome to the typescript learning!");
 // Type Script simple type values ley
 let username = "UserName";
@@ -110,4 +111,18 @@ let current_direction = (directions) => {
     }
 };
 current_direction(Directions.North);
+const Car = {
+    carName: "I20 Nline ",
+    carYear: 2026,
+    carModel: "N6"
+};
+console.log("the Car object value is" + Car.carName + Car.carModel, Car.carYear);
+const carDetails = {
+    name: "Nline N6",
+    year: 2026,
+    username: "AshaYAsh",
+    insurance: true,
+    number: 1234567
+};
+console.log(carDetails);
 //# sourceMappingURL=index.js.map
